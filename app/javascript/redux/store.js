@@ -1,19 +1,14 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import greetingsReducer from './greetings/greetings';
 
-const initialState = {
-  greeting: '',
-};
+const reducer = combineReducers({
+   greetingsReducer,
+});
 
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'SET_GREETING':
-      return { ...state, greeting: action.payload };
-    default:
-      return state;
-  }
-};
-
-const store = createStore(reducer, applyMiddleware(thunk));
+const store = createStore(
+  reducer, applyMiddleware(logger, thunk),
+);
 
 export default store;
