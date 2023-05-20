@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Rails Budget App <a name="about-project"></a>
+# 📖 Rails React Onepp <a name="about-project"></a>
 
-The project By now you've used many different gems with Rails and this exercise will have you connect previous knowledge with new knowledge as you get a chance to use Webpack with jsbundling-rails gem.
+The app  features a smooth combination of Rails with React. The project By now you've used many different gems with Rails and this exercise will have you connect previous knowledge with new knowledge as you get a chance to use Webpack with jsbundling-rails gem.
 
 ## 🛠 Built With <a name="built-with"></a>
 
