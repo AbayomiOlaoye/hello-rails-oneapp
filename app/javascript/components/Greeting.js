@@ -4,7 +4,6 @@ import { fetchGreetingApi } from '../redux/greetings/greetings';
 
 const Greeting =() => {
   const greeting = useSelector((state) => state.greetingsReducer);
-  console.log(greeting);
   const dispatch = useDispatch();
   useEffect(() => {
       dispatch(fetchGreetingApi());
