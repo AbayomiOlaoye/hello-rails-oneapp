@@ -1,14 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Greetings</h1>
-
-<div id="greetings">
-  <% @greetings.each do |greeting| %>
-    <%= render greeting %>
-    <p>
-      <%= link_to "Show this greeting", greeting %>
-    </p>
-  <% end %>
+<div id="root">
+  <script src="<%= javascript_pack_path 'application' %>"></script>
 </div>
-
-<%= link_to "New greeting", new_greeting_path %>
